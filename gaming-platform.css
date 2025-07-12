@@ -1,0 +1,237 @@
+* { 
+  margin:0; 
+  padding:0; 
+  box-sizing:border-box; 
+  font-family:sans-serif; 
+}
+body { 
+  background:#2e2e2e; 
+  color:#fff; 
+  line-height:1.6; 
+}
+header { 
+  background:#1c1c1c; 
+  padding:1rem; 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center; 
+}
+nav ul { 
+  list-style:none; 
+  display:flex; 
+  gap:1rem; 
+}
+nav ul li a { 
+  color:#fff; 
+  text-decoration:none; 
+  font-weight:600; 
+}
+.hamburger { 
+  display:none; 
+  font-size:1.5rem; 
+  cursor:pointer; 
+}
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url('C:/Users/New Prime/Desktop/my-website/images/numbers_table.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+.hero-button {
+  padding: 12px 30px;
+  background-color: #00b894;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.hero-button:hover {
+  background-color: #019173;
+}
+main { 
+  display:flex; 
+  flex-wrap:wrap; 
+  padding:1rem; 
+  gap:1rem; 
+}
+aside { 
+  flex:1; 
+  min-width:200px; 
+  background:#444; 
+  padding:1rem; 
+  border-radius:0.5rem; 
+}
+section { 
+  flex:3; 
+  min-width:300px; 
+}
+
+.dialog-box { 
+  background:#444; 
+  padding:1rem; 
+  border-radius:0.5rem; 
+  text-align:center; 
+  margin-bottom:1rem; 
+  line-height: 2.8;
+}
+.dialog-box input { 
+  width:60%; 
+  padding:0.5rem; 
+  border:none; 
+  border-radius:0.3rem; 
+  margin:0.5rem 0; 
+}
+.dialog-box button { 
+  padding:0.6rem 1.2rem; 
+  background:#1c1c1c; 
+  border:none; 
+  border-radius:0.3rem; 
+  cursor:pointer; 
+  color:#fff; 
+}
+/*#box {
+  background-image: url("C:/Users/New Prime/Desktop/my-website/images/numbers_table.png");
+  background-position: cover;
+}*/
+#weightCheck {
+  background-color: #444;
+}
+
+.about {
+  background-color: #1c1c1c;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about .container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+table { 
+  width:100%; 
+  max-width:400px; 
+  margin:auto; 
+  border-collapse:collapse; 
+}
+td { 
+  border:1px solid #777; 
+  padding:0.5rem; 
+}
+footer { 
+  background:#1c1c1c; 
+  text-align:center; 
+  padding:1rem; 
+  margin-top:2rem; 
+}
+
+
+@media (max-width:768px) {
+  nav ul { 
+    flex-direction:column; 
+    display:none; 
+    width:100%; 
+  }
+  nav ul.active { 
+    display:flex; 
+  }
+  .hamburger { 
+    display:block; 
+  }
+  main { 
+    flex-direction:column; 
+  }
+}
+
+
+@media (max-width:768px) {
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about h2 {
+    font-size: 1.75rem;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+  .hero-button {
+    font-size: 0.9rem;
+    padding: 10px 25px;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weight Checker</title>
+	<meta name="description" content="Check your weight and get personalized diet advice.">
+  	<meta name="keywords" content="Weight Checker, Health, Diet, Wellness">
+  	<meta name="author" content="Zia Ul Rehman">
+  	<!-- <link rel="stylesheet" type="text/css" href="../gaming-platform.css"> -->
+
+  	<script type="application/ld+json">
+  		{
+		    "@context": "https://schema.org",
+		    "@type": "WebApplication",
+		    "name": "Weight Checker",
+		    "description": "Get your estimated weight and health advice.",
+  		}
+  	</script>
+
+  	<link rel="stylesheet" type="text/css" href="weight-checker.css">
+</head>
+<body>
+
+	<header>
+		<h1>Gaming Platform</h1>
+		<nav id="navbar">
+			<ul id="links">
+				<li><a href="../gaming-platform.html">Home</a></li>
+				<li><a href="#about-us">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+	    <h1>Weight Checker</h1>
+		    <form id="weightForm">
+		      <label for="age">Enter your Age between 1 and 100:</label>
+		      <input type="number" id="age" name="age" min="1" max="100" required />
+
+		      <label for="roti">Ap daily kitni Rotiyan khaty hain (1–10)?</label>
+		      <select id="roti" name="roti" required>
+		        <option value="">Select</option>
+		        <option value="1">1</option>
+		        <option value="2">2</option>
+		        <option value="3">3</option>
+		        <option value="4">4</option>
+		        <option value="5">5</option>
+		        <option value="6">6</option>
+		        <option value="7">7</option>
+		        <option value="8">8</option>
+		        <option value="9">9</option>
+		        <option value="10">10</option>
+		      </select>
+
+
+		      <label>Kia ap baqaidgi se Walk par jaty hain?</label>
+			  <input type="radio" name="walk" value="yes" required /> Yes
+			  <input type="radio" name="walk" value="no" /> No
+
+			  <label>Kia ap Fast Food (jaisa keh samosa, pakora, burger, pizza) waghera khaty hain?</label>
+			  <input type="radio" name="fastFood" value="yes" required /> Yes
+			  <input type="radio" name="fastFood" value="no" /> No
+
+	  
+		      <label>Kia ap Cold Drinks pity hain?</label>
+		      <input type="radio" name="coldDrink" value="yes" required /> Yes
+		      <input type="radio" name="coldDrink" value="no" /> No
+
+		      <label>Kia ap Smoking karty hain?</label>
+		      <input type="radio" name="cigarette" value="yes" required /> Yes
+		      <input type="radio" name="cigarette" value="no" /> No
+
+		      <label>Kia apko Diabetes hai?</label>
+		      <input type="radio" name="sugar" value="yes" required /> Yes
+		      <input type="radio" name="sugar" value="no" /> No
+
+		      <button type="submit">Check My Weight</button>
+		    </form>
+  	</div>
+
+  	<div class="about" id="about-us">
+      <h2>About Us</h2>
+      <p>Welcome to this Platform! I'm passionate to creating high quality web experiences. My mission is to deliver human interactive and user friendly solution to the People.</p>
+    </div>
+
+    <footer>
+    	<p> &copy; 2025 Gaming Platform. All rights reserved.</p>
+  	</footer>
+
+  	<script type="text/javascript" src="weight-checker.js"></script>
+</body>
+</html>

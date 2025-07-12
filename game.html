@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Generating Game | Play Game</title>
+  <meta name="description" content="Enter a number between 1 and 100 to generate its table.">
+  <link rel="canonical" href="https://my-website.com/table/game.html">
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <header>
+    <h1>Number Table Game</h1>
+    <nav id="navbar">
+      <ul id="links">
+        <li><a href="../gaming-platform.html">Home</a></li>
+        <li><a href="game.html">Play Game</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <article>
+        <div class="dialog-box">
+          <p>Enter your number between 1 and 100:</p>
+          <input type="number" id="userNumber" min="1" max="100" placeholder="enter your number">
+          <button onclick="generateTable()">Generate Table</button>
+        </div>
+        <div id="tableResult" aria-live="polite"></div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p> &copy; 2025 Game Zone. All rights reserved.</p>
+  </footer>
+
+  <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
